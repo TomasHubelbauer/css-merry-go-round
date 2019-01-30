@@ -339,7 +339,7 @@ window.addEventListener('load', _ => {
           this.state.activationPercentage + ' %',
         ),
         p(
-          'Make by ',
+          'Made by ',
           a({ href: 'https://github.com/TomasHubelbauer', target: '_blank', }, 'Tomas Hubelbauer'),
           ' · ',
           a({ href: 'https://github.com/TomasHubelbauer/css-merry-go-round', target: '_blank', }, 'GitHub'),
