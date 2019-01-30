@@ -15,7 +15,6 @@ body {
 #merry-go-round > * {
   display: inline-flex;
   flex-direction: column;
-  outline: 1px solid gray;
   position: absolute;
   /*
     Note that the `style` could be fully automated if CSS supported `attr` in `calc`:

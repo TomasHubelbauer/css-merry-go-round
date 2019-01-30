@@ -287,7 +287,7 @@ window.addEventListener('load', _ => {
           }
         ],
         position: 0,
-        activationPercentage: 0,
+        activationPercentage: 100,
         scale: 100,
         showAxis: false,
       };
