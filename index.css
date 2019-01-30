@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+#merry-go-round {
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#merry-go-round.with-axis {
+  background: linear-gradient(to right, transparent 49.9%, red 49.9%, red 50.1%, transparent 50.1%);
+}
+
+#merry-go-round > * {
+  display: inline-flex;
+  flex-direction: column;
+  outline: 1px solid gray;
+  position: absolute;
+  /*
+    Note that the `style` could be fully automated if CSS supported `attr` in `calc`:
+    
+    ```css
+    left: calc(50% - attr(data-main-position);
+    translateX(calc(-50% + attr(data-position));
+    ```
+  */
+}
+
+#merry-go-round progress {
+  /* Note that `width: auto` doesn't work in all browsers */
+  min-width: 100%;
+  width: 0;
+}
+
+audio {
+  width: 100%;
+}

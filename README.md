@@ -2,10 +2,13 @@
 
 This repository showcases a CSS solution for a "merry-go-round" style sliding showcase.
 
-A set of items are given a value (position in space or time) and then there is a main value relative to which
-are of them are positioned.
+- There is a main position of the carousel
+- There is a set of items each with their own position and duration
+- Items are placed so that they are centered around the main axis with percentage offset given by activation percentage
+    - 0 % means the item is to the right of the axis when its position is equals to the main position
+    - 50 % means the item is dead center through the axis when its position is equals to the main position
+    - 100 % means the item is to the left of the axis when its position is equals to the main position
+- Items slide from left to right relative to the difference of their position and main position
+- Items show a progress bar set at the proportion of the items position (min) and the items position combined with its duration (max) relative the to main position (value)
 
-The center of the control is in its visual middle, so a main value of zero with an item with a value of zero
-will result in an item being placed dead center of the container control with the middle axis going through it.
-
-
+[**DEMO**](https://tomashubelbauer.github.io/css-merry-go-round/)
