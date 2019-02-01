@@ -348,6 +348,7 @@ window.addEventListener('load', _ => {
     }
 
     componentDidMount() {
+      // Read position on RAF as well because `ontimeupdate` by itself is very infrequent (~ 200-300ms depending on the browser)
       const raf = () => {
         this.setState({ position: this.audioNode.currentTime });
         window.requestAnimationFrame(raf);
