@@ -103,7 +103,7 @@ window.addEventListener('load', _ => {
           {
             position: 55.708979,
             duration: 1.735284,
-            text: 'reason and rhym'
+            text: 'reason and rhyme'
           },
           {
             position: 58.239092,
