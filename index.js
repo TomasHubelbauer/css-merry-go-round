@@ -1,25 +1,4 @@
 window.addEventListener('load', _ => {
-  const tag = (type, propsAndOrChildren) => {
-    if (propsAndOrChildren.length === 0) {
-      return React.createElement(type);
-    }
-
-    // Accepts object as props as long as it is an object which is not a React element instance ($$typeof === Symbol) or an array
-    if (typeof propsAndOrChildren[0] === 'object' && !(propsAndOrChildren[0] instanceof Array) && !propsAndOrChildren[0].$$typeof) {
-      return React.createElement(type, propsAndOrChildren[0], ...propsAndOrChildren.slice(1));
-    }
-
-    return React.createElement(type, undefined, ...propsAndOrChildren);
-  }
-
-  const a = (...propsAndOrChildren) => tag('a', propsAndOrChildren);
-  const audio = (props) => React.createElement('audio', props);
-  const div = (...propsAndOrChildren) => tag('div', propsAndOrChildren);
-  const input = (props) => React.createElement('input', props);
-  const label = (...propsAndOrChildren) => tag('label', propsAndOrChildren);
-  const p = (...propsAndOrChildren) => tag('p', propsAndOrChildren);
-  const progress = (props) => React.createElement('progress', props);
-
   class App extends React.Component {
     constructor(props) {
       super(props);
