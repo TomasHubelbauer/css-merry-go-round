@@ -15,3 +15,7 @@ This repository showcases a CSS solution for a "merry-go-round" style sliding sh
     - 100 % means the item is to the left of the axis when its position is equals to the main position
 - Items slide from left to right relative to the difference of their position and main position
 - Items show a progress bar set at the proportion of the items position (min) and the items position combined with its duration (max) relative the to main position (value)
+
+## To-Do
+
+### Lift this to be its own lyrics timing app
